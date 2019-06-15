@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function(){
         const n = number_circle - 2,  G = material === '12Х18Н10Т' ? 68670 : 78480, C = ((G * Math.pow(d,4)) / (8 * D * Math.pow(3,n))).toFixed(1);
         let term = '';
         let deviation = '16118-75';
-        if(material === '60C2А' || material === '51ХФА'){
+        if(material === '60С2А' || material === '51ХФА'){
             if(d < 14.0){
                 term = 'HRC 47,5…53,5';
             } else {
-                term = 'HRC  44…51,5';
+                term = 'HRC 44…51,5';
             }
         }
         if(material === '12Х18Р10Т'){
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 context.fillText('4. Жесткость : ' + C + ' *Н/мм', 170, 545);
                 context.fillText('5. Термообработать : ' + term , 170, 560);
                 context.fillText('6. *Размеры и параметры для справок', 170, 575);
-                // context.fillText('7. Остальные технические пребования и отклонения по ГОСТ : ' + deviation , 170, 590);
-                context.fillText('7. Покрытие : ' + surface, 170, 590);
+                context.fillText('7. Остальные технические пребования и отклонения по ГОСТ ' + deviation , 170, 590);
+                context.fillText('8. Покрытие : ' + surface, 170, 605);
                 context.fillText( d + ' X ' + D + ' X ' + height + ' X ' + number_circle, 450, 750);
                 context.fillText( material + ' - ' + d, 300, 860);
             }
@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 context.fillText('4. Жесткость : ' + C  + ' *Н/мм ', 170, 545);
                 context.fillText('5. Термообработать : ' + term , 170, 560);
                 context.fillText('6. *Размеры и параметры для справок', 170, 575);
-                // context.fillText('7. Остальные технические пребования и отклонения по ГОСТ : ' + deviation , 170, 590);
-                context.fillText('7. Покрытие : ' + surface, 170, 590);
+                context.fillText('7. Остальные технические пребования и отклонения по ГОСТ ' + deviation , 170, 590);
+                context.fillText('8. Покрытие : ' + surface, 170, 605);
                 context.fillText( d + ' X ' + D + ' X ' + height + ' X ' + number_circle, 450, 750);
                 context.fillText( material + ' - ' + d, 300, 860);
             }
@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function(){
                 context.fillText('4. Жесткость : ' + C  + ' *Н/мм ', 170, 545);
                 context.fillText('5. Термообработать : ' + term , 170, 560);
                 context.fillText('6. *Размеры и параметры для справок' , 170, 575);
-                // context.fillText('7. Остальные технические пребования и отклонения по ГОСТ : ' + deviation , 170, 590);
-                context.fillText('7. Покрытие : ' + surface, 170, 590);
+                context.fillText('7. Остальные технические пребования и отклонения по ГОСТ ' + deviation , 170, 590);
+                context.fillText('8. Покрытие : ' + surface, 170, 605);
                 context.fillText( d + ' X ' + D + ' X ' + height + ' X ' + number_circle, 450, 750);
                 context.fillText( material + ' - ' + d, 300, 860);
             }
